@@ -1,0 +1,7 @@
+on: push
+jobs:
+  configure:
+    runs-on:ubuntu-latest
+    container: openjdk:11
+    steps:
+      run: java -v
