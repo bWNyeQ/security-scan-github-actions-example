@@ -4,6 +4,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: java --version
-      - run: apt-get install nikto -y
+      - run: sudo apt-get install nikto -y
       - uses: actions/checkout@v3
       - run: ls
