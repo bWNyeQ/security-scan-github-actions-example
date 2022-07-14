@@ -1,6 +1,6 @@
 on: push
 jobs:
   configure:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      run: java -v
+      - run: java -v
