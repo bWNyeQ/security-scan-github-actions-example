@@ -6,4 +6,5 @@ jobs:
       - run: java --version
       - run: sudo apt-get install nikto -y
       - uses: actions/checkout@v3
-      - run: ls
+      - run: java -jar app.jar &
+      - run: sleep 2; nikto -h localhost:8008
